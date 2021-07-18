@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace MandelbrotExplorer
 {
     class Program
     {
+        
+        
         private static Form _form;
+
+        private static double _scale = 5;
+        private static double _focusX = 0;
+        private static double _focusY = 0;
         
         static void Main(string[] args)
         {
